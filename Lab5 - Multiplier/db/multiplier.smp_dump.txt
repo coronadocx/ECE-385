@@ -1,0 +1,11 @@
+
+State Machine - |multiplier|control_unit:CU|current_state
+Name current_state.Preclear current_state.Again current_state.Hold current_state.Add current_state.Check current_state.Shift current_state.Clear current_state.Rest 
+current_state.Rest 0 0 0 0 0 0 0 0 
+current_state.Clear 0 0 0 0 0 0 1 1 
+current_state.Shift 0 0 0 0 0 1 0 1 
+current_state.Check 0 0 0 0 1 0 0 1 
+current_state.Add 0 0 0 1 0 0 0 1 
+current_state.Hold 0 0 1 0 0 0 0 1 
+current_state.Again 0 1 0 0 0 0 0 1 
+current_state.Preclear 1 0 0 0 0 0 0 1 

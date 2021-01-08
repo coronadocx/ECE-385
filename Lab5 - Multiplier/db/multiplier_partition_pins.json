@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "AHEXU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AHEXL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BHEXL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "S[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "S[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RUN",
+					"strict" : false
+				},
+				{
+					"name" : "CLEARA_LOADB",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

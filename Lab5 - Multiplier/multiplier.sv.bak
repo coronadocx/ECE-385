@@ -1,0 +1,53 @@
+module multiplier
+(
+	input logic  RESET,
+	input logic  CLK,
+	input logic  RUN,
+	input logic  CLEARA_LOADB,
+	input logic  [7:0]S,
+	
+	output logic [6:0]AHEXU,
+	output logic [6:0]AHEXL,
+	output logic [6:0]BHEXU,
+	output logic [6:0]BHEXL,
+	output logic [7:0]AVAL,
+	output logic [7:0]BCAL,
+	output logic X
+);
+	//Control Unit
+	logic sub,clear,mode_a, mode_b;
+	control_unit CU(.RESET, .CLK, .RUN, .CLEARA_LOADB, .B_LSB(b_lsb), .SUB(sub), .CLEAR(clear), .MODE_A(mode_a), .MODE_B(mode_b));		//TODO - create control unit
+	
+	//Adder
+	logic [8:0]nine_out;
+	nine_bit_adder adder(.A(a_out), .B(S), .SUB(sub), .SUM(nine_out));
+	
+	//Clear logic 			//TODO - decide if clear should also clear X
+	logic [8:0]clearMUX_a;
+	
+	//Register A
+	logic a_b;
+	logic [7:0]a_out;
+
+	shift_8 reg_A(.MODE(mode_a), .CLK, .IN(nine_a[8]), .PIN(clearMUX_a[7:0]), .OUT(a_to_b), .POUT(a_out)
+	
+	//Register B
+	logic b_lsb;
+	shift_8 reg_B(.MODE(mode_b), .CLK, .IN(a_to_b), .PIN(S), .OUT(), .POUT()
+	
+	always_comb
+	begin
+		//Clear A logic
+		unique case(clear):
+			//Do not clear
+			1'b0: clearMUX_a = nine_out;
+			//Clear 
+			1'b1: clearMUX_a = 9'b000000000;
+		endcase
+	end
+	
+	
+	
+	
+	
+endmodule

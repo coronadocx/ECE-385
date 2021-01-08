@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at control.sv(18): object "CLEAR" differs only in case from object "Clear" in the same scope File: C:/Users/ctheld2/multiplier/control.sv Line: 18
+Info (10281): Verilog HDL Declaration information at testbench.sv(76): object "test" differs only in case from object "TEST" in the same scope File: C:/Users/ctheld2/multiplier/testbench.sv Line: 76
+Info (10281): Verilog HDL Declaration information at multiplier.sv(10): object "AHEXL" differs only in case from object "AhexL" in the same scope File: C:/Users/ctheld2/multiplier/multiplier.sv Line: 10
+Info (10281): Verilog HDL Declaration information at multiplier.sv(9): object "AHEXU" differs only in case from object "AhexU" in the same scope File: C:/Users/ctheld2/multiplier/multiplier.sv Line: 9
+Info (10281): Verilog HDL Declaration information at multiplier.sv(12): object "BHEXL" differs only in case from object "BhexL" in the same scope File: C:/Users/ctheld2/multiplier/multiplier.sv Line: 12
+Info (10281): Verilog HDL Declaration information at multiplier.sv(11): object "BHEXU" differs only in case from object "BhexU" in the same scope File: C:/Users/ctheld2/multiplier/multiplier.sv Line: 11

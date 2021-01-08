@@ -1,0 +1,135 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do multiplier_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/Synchronizers.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:26 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/Synchronizers.sv 
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
+# 
+# Top level modules:
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/control.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:27 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/control.sv 
+# -- Compiling module control_unit
+# ** Warning: C:/Users/ctheld2/multiplier/control.sv(85): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/ctheld2/multiplier/control.sv(86): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/ctheld2/multiplier/control.sv(131): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	control_unit
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/shift_8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:27 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/shift_8.sv 
+# -- Compiling module shift_8
+# 
+# Top level modules:
+# 	shift_8
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/nine_bit_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:27 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/nine_bit_adder.sv 
+# -- Compiling module nine_bit_adder
+# -- Compiling module carry_select_adder
+# -- Compiling module carry_select
+# -- Compiling module byte_adder
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	nine_bit_adder
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/HexDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:27 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/multiplier.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:27 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/multiplier.sv 
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/ctheld2/multiplier {C:/Users/ctheld2/multiplier/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:27 on Sep 27,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/ctheld2/multiplier" C:/Users/ctheld2/multiplier/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 10:17:27 on Sep 27,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 10:17:27 on Sep 27,2018
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.multiplier
+# Loading work.control_unit
+# Loading work.nine_bit_adder
+# Loading work.carry_select_adder
+# Loading work.byte_adder
+# Loading work.full_adder
+# Loading work.carry_select
+# Loading work.shift_8
+# Loading work.HexDriver
+# Loading work.sync
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/multiplier.sv(48): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/test
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/control.sv(47): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/test/CU
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/shift_8.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 1  Instance: /testbench/test/reg_A
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/shift_8.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 10 ns  Iteration: 1  Instance: /testbench/test/reg_B
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/shift_8.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 30 ns  Iteration: 1  Instance: /testbench/test/reg_A
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/shift_8.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 30 ns  Iteration: 1  Instance: /testbench/test/reg_B
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/shift_8.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/test/reg_A
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/shift_8.sv(25): No condition is true in the unique/priority if/case statement.
+#    Time: 50 ns  Iteration: 1  Instance: /testbench/test/reg_B
+# ** Warning: (vsim-8315) C:/Users/ctheld2/multiplier/multiplier.sv(48): No condition is true in the unique/priority if/case statement.
+#    Time: 50 ns  Iteration: 2  Instance: /testbench/test

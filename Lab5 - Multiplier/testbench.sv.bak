@@ -1,0 +1,73 @@
+module testbench();
+	timeunit 10ns;
+	timeprecision 1ns;
+	
+	//Input
+	logic CLK, IN;
+	logic [2:0]MODE;
+	logic [7:0]PIN;
+	
+	//Output
+	logic OUT;
+	logic [7:0]POUT;
+	
+	//Expected Results
+	// logic E_OUT;
+	logic [7:0]E_POUT;
+	integer errNO = 0;
+	
+	shift_8 register(.*);
+		/** MODES
+		 * 0 = Hold
+		 * 1 = Right Shift
+		 * 2 = Left Shift
+		 * 3 = Parallel Load
+		 **/
+	
+	always
+	begin : CLOCK_GENERATOR
+		#1 CLK = ~CLK;
+	end
+	
+	initial
+	begin
+		CLK = 0;
+	end
+	
+	initial
+	begin : TEST
+		//Test halting
+		MODE = 2'b00;
+		IN = 1'b1;
+		
+		#2 $display("%B", POUT);
+		
+		//Test Parallel Load
+		PIN[0] = 0;
+		PIN[1] = 1;
+		PIN[2] = 0;
+		PIN[3] = 1;
+		MODE = 2'b11;
+		$display("%B", POUT);
+		
+		#1 $display("%B", POUT);
+		#1 $display("%B", POUT);
+		#1 $display("%B", POUT);
+		#1 $display("%B", POUT);
+	
+		//Test RightShift
+		MODE = 2'b01;
+		IN = 1'b1;
+		
+		#2 IN = 1'b0;
+		
+		
+		$display("%B", POUT);
+		
+		#1 $display("%B", POUT);
+		#1 $display("%B", POUT);
+		#1 $display("%B", POUT);
+		#1 $display("%B", POUT);	
+	end
+	
+endmodule

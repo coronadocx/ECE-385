@@ -1,0 +1,119 @@
+//control_unit CU(.RESET, .CLK, .RUN, .CLEARA_LOADB, .B_LSB(b_lsb), .SUB(sub), .CLEAR(clear), .MODE_A(mode_a), .MODE_B(mode_b));		//TODO - create control unit
+
+module control_unit
+(
+	input  logic RESET, CLK, RUN, CLEARA_LOADB, B_LSB,
+	output logic SUB, CLEAR,
+	output logic [1:0]MODE_A,
+	output logic [1:0]MODE_B
+);
+	logic [3:0]counter //0-7
+	enum logic [3:0] {A,B,C,D,E} current_state, next_state;
+	/**
+	 * A - rest
+	 * B - clera
+	 * C - shift
+	 * D - add
+	 * E - wait for RUN to go cold
+	 **/
+
+	always_ff @ (posedge CLK)
+	begin
+		//Synchronus Reset
+		if (RESET)
+			current_state <= A;
+		else
+			current_state <= next_state;
+	end
+		
+	always_comb
+		begin
+			next_state = current_state;
+			
+			unique case (current_state)
+			//Rest State
+			A:
+			begin
+				//Update
+				if (RUN)
+				begin
+					next_state = C;
+					counter = 0;
+				end
+				
+				else if (CLEARA_LOADB) next_state = B
+				
+				//Output
+				SUB    = 1'b0;
+				CLEAR  = 1'b0;
+				MODE_A = 2'b00;		//Registers in Hold state
+				MODE_B = 2'b00;
+			end
+			
+			//Clear and Load State
+			B:
+			begin
+				//Update
+				next_state = A;
+				
+				//Output
+				SUB    = 1'b0;
+				CLEAR  = 1'b1;
+				MODE_A = 2'b11;		//Parallel load the clear
+				MODE_B = 2'b11;		//Parallel load the signal
+			end
+			
+			//Shift State
+			C:
+			begin
+				//Update
+				if (counter == 4'h8) next_state = E; 	//After 8 shifts you're done
+				else
+				begin
+					counter = counter + 4'h1;			//Increment shift counter
+					next_state = D;
+				end
+				
+				//Output
+				SUB    = 1'b0;
+				CLEAR  = 1'b0;
+				MODE_A = 2'b01;		//Registers in Right Shift state
+				MODE_B = 2'b01;
+			end
+			
+			//Add State
+			D:
+			begin
+				//Update
+				next_state = C;
+				
+				
+				//Output
+				//If in the last shift you've got a negative sign, subtract
+				if ((counter == 4'h8) & (B_LSB == 1'b0)) SUB = 1'b1;
+				else SUB = 1'b0;
+				
+				CLEAR  = 1'b0;
+				MODE_A = 2'b11;		//A in parallel input, B in hold
+				MODE_B = 2'b00;
+
+			end
+			
+			
+			//Hold State
+			E:
+			begin
+				//Update
+				if (~RUN) next_state = A;
+				
+				//Output
+				SUB    = 1'b0;
+				CLEAR  = 1'b00;
+				MODE_A = 2'b00;		//Registers in Hold state
+				MODE_B = 2'b00;
+			end
+			endcase
+			
+		end
+
+endmodule

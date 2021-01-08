@@ -1,0 +1,67 @@
+//shift_8 example(.MODE(), .CLK(), .IN(), .PIN(), .OUT(), .POUT()
+module shift_8
+(
+	input  logic [1:0]MODE, //Mode Select
+		/**
+		 * 0 = Hold
+		 * 1 = Right Shift
+		 * 2 = Left Shift
+		 * 3 = Parallel Load
+		 **/
+	input  logic CLK,
+	input  logic IN,			//Shift Input
+	input  logic [7:0]PIN,	//Parallel Input
+	output logic OUT,			//Shift Output
+	output logic [7:0]POUT  //Parallel Output
+);
+
+
+	logic [7:0]R;
+//	logic [7:0]R_next;	//Shouldn't need this
+
+	always_ff @ (posedge CLK)
+		begin
+			unique case(MODE)
+				//Hold
+//				2'b00:
+				
+				//Right Shift
+				2'b01:
+				begin
+					OUT  <= R[7];
+					R[7] <= R[6];
+					R[6] <= R[5];
+					R[5] <= R[4];
+					R[4] <= R[3];
+					R[3] <= R[2];
+					R[2] <= R[1];
+					R[1] <= R[0];
+					R[0] <= IN;
+				end
+				
+				//Left Shift
+				2'b10:
+					begin
+						OUT  <= R[0]; 	
+						R[0] <= R[1];
+						R[1] <= R[2];
+						R[2] <= R[3];
+						R[3] <= R[4];
+						R[4] <= R[5];
+						R[5] <= R[6];
+						R[6] <= R[7];
+						R[7] <= IN;
+					end
+				
+				//Parallel Load
+				2'b11: R <= PIN;
+				
+				//Hold by default
+//				default: 
+			endcase
+			
+			POUT <= R;
+		end		
+
+		 
+endmodule
