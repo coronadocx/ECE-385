@@ -1,0 +1,6 @@
+The following need to be worked on later (currently commented out):
+	-vga controller
+	-ball
+	-color_mapper
+
+Changed "nios_system" module to "lab8_soc" in toplevel
