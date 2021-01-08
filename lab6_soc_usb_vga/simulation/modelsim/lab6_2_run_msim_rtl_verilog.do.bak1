@@ -1,0 +1,34 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/tristate.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/test_memory.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/SLC3_2.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/Mem2IO.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/ISDU.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/HexDriver.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/register.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/reg_file.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/bus.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/alu.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/addr_alu.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/ben.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/memory_contents.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/pc.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/mdr.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/datapath.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/slc3.sv}
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/provided {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/provided/lab6_toplevel.sv}
+
+vlog -sv -work work +incdir+C:/Users/chris/Documents/School/ECE\ 385/Lab6/Lab6_2/../Lab6 {C:/Users/chris/Documents/School/ECE 385/Lab6/Lab6_2/../Lab6/testbench.sv}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+
+add wave *
+view structure
+view signals
+run 1000 ns

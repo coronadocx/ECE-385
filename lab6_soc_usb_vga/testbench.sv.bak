@@ -1,0 +1,81 @@
+module testbench();
+	timeunit 10ns;
+	timeprecision 1ns;
+
+//////TopLevel Signals//////
+	//Input
+   logic [15:0] S;
+	logic        Clk, Reset, Run, Continue;
+	
+	//Output
+	logic [11:0] LED;
+	logic [6:0]  HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7;
+	logic        CE, UB, LB, OE, WE;
+	logic [19:0] ADDR;
+	
+	//Inout
+	wire [15:0]  Data;
+
+//////Additional Waveforms//////
+	logic [15:0] PC,MAR,MDR,IR;        //slc3
+//	logic [15:0] PCi,MARi,MDRi,IRi;    //datapath
+
+	
+	
+	lab6_toplevel toplevel(.*);
+	
+	always
+	begin : CLOCK_GENERATOR
+		#1 Clk = ~Clk;
+	end
+	
+	initial Clk = 0;
+	
+	always @ *
+	begin : INTERNAL_SIGNALS
+		//slc3 Signals
+		PC  = toplevel.my_slc.PC;
+		MAR = toplevel.my_slc.MAR;
+		MDR = toplevel.my_slc.MDR;
+		IR  = toplevel.my_slc.IR;
+		
+			
+		//Datapath Signals
+//		PCi  = toplevel.my_slc.d0.PC;
+//		MARi = toplevel.my_slc.d0.MAR;
+//		MDRi = toplevel.my_slc.d0.MDR;
+//		IRi  = toplevel.my_slc.d0.IR;
+	end
+	
+	initial
+	begin : TEST
+////////////////////////Switch Initialization///////////////////////
+	    S = 16'h0000;
+		
+		//Active-high control switches
+		Reset = 1'b1; Run = 1'b1; Continue = 1'b1;
+
+////////////////////////Testing/////////////////////////////////////
+		//Reset to start things off
+		#2 Reset = 1'b0;
+		#4 Reset = 1'b1;
+		
+		//See what happens when you just hit run
+		#2 Run = 1'b0;
+		#2 Run = 1'b1;
+		
+		//Takes approx 10 to finish the first cycle
+		#10 Continue = 1'b0;
+		#2  Continue = 1'b1;
+				#10 Continue = 1'b0;
+		#2  Continue = 1'b1;
+				#10 Continue = 1'b0;
+		#2  Continue = 1'b1;
+				#10 Continue = 1'b0;
+		#2  Continue = 1'b1;
+				#10 Continue = 1'b0;
+		#2  Continue = 1'b1;
+		
+	end
+	
+endmodule

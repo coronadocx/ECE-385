@@ -1,0 +1,589 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/chris/Documents/School/ECE385/Lab6/simulation/modelsim
+vaddr_alu
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1539234687
+!i10b 1
+!s100 TH[2QElRRlIb_RUInSnJ^1
+I`C53f<:cUCR?Q4a9YVf@F0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 addr_alu_sv_unit
+S1
+R0
+w1539047406
+8C:/Users/chris/Documents/School/ECE385/Lab6/addr_alu.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/addr_alu.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1539234687.000000
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/addr_alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/addr_alu.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/chris/Documents/School/ECE385/Lab6
+Z8 tCvgOpt 0
+valu_unit
+R1
+R2
+!i10b 1
+!s100 zV9l06@N@BD[CnNUGDzd83
+I>fVBR3ffaUCej]H20lzed0
+R3
+!s105 alu_sv_unit
+S1
+R0
+w1538939840
+8C:/Users/chris/Documents/School/ECE385/Lab6/alu.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/alu.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/alu.sv|
+!i113 1
+R6
+R7
+R8
+vben_unit
+R1
+Z9 !s110 1539234688
+!i10b 1
+!s100 27d3[=?Kk7_UOQlB4I[d<1
+If<3@8MdTSHQ8<d]L;4Xfi3
+R3
+!s105 ben_sv_unit
+S1
+R0
+w1539048381
+8C:/Users/chris/Documents/School/ECE385/Lab6/ben.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/ben.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/ben.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/ben.sv|
+!i113 1
+R6
+R7
+R8
+vbus
+R1
+R2
+!i10b 1
+!s100 A^AZ61:Gz<d8D8zJRkA^Y1
+IWaIoAl<JN?`2TB=h;B75m0
+R3
+!s105 bus_sv_unit
+S1
+R0
+w1538611408
+8C:/Users/chris/Documents/School/ECE385/Lab6/bus.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/bus.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/bus.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/bus.sv|
+!i113 1
+R6
+R7
+R8
+vdatapath
+R1
+R9
+!i10b 1
+!s100 1HLV]K1K3JM?bB]6zz:U62
+Ikd?f5e5XAY?2i4j8UZ9]f2
+R3
+!s105 datapath_sv_unit
+S1
+R0
+w1538967650
+8C:/Users/chris/Documents/School/ECE385/Lab6/datapath.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/datapath.sv
+Z10 L0 11
+R4
+r1
+!s85 0
+31
+Z11 !s108 1539234688.000000
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/datapath.sv|
+!i113 1
+R6
+R7
+R8
+vHexDriver
+R1
+R2
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+IMd_GKg1iQ=dPUlfl;EFAl0
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1537394574
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/HexDriver.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/HexDriver.sv|
+!i113 1
+R6
+Z12 !s92 -sv -work work +incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided
+R8
+n@hex@driver
+vISDU
+R1
+R2
+!i10b 1
+!s100 ;[_Ueh@CgA]l8Mco58oHM1
+I0HbNUiX=D_OUdR:[^Jge_3
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+w1539054210
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/ISDU.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/ISDU.sv
+Z13 L0 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/ISDU.sv|
+!i113 1
+R6
+R12
+R8
+n@i@s@d@u
+vlab6_toplevel
+R1
+R9
+!i10b 1
+!s100 4]XQCYaB:<@Te;ljEgYVf2
+IH4ZO5DH4mU20l^5h;2Z5k1
+R3
+!s105 lab6_toplevel_sv_unit
+S1
+R0
+w1539234659
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/lab6_toplevel.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/lab6_toplevel.sv
+R10
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/lab6_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/lab6_toplevel.sv|
+!i113 1
+R6
+R12
+R8
+vmdr_unit
+R1
+R9
+!i10b 1
+!s100 :eWAh_MV1DOL]_bdLJJSH2
+IF^GdGh<<A=QEhPm^UKBW`2
+R3
+!s105 mdr_sv_unit
+S1
+R0
+w1538609072
+8C:/Users/chris/Documents/School/ECE385/Lab6/mdr.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/mdr.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/mdr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/mdr.sv|
+!i113 1
+R6
+R7
+R8
+vMem2IO
+R1
+Z14 !s110 1539234686
+!i10b 1
+!s100 T5o=2]ML<44zHJMede2Ch1
+IQLUTeEHfcbfm7cla5]c@_3
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+w1538439294
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/Mem2IO.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/Mem2IO.sv
+L0 20
+R4
+r1
+!s85 0
+31
+Z15 !s108 1539234686.000000
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/Mem2IO.sv|
+!i113 1
+R6
+R12
+R8
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z16 DXx4 work 6 SLC3_2 0 22 XeGcKiAh>T3VH0bVkE>oo1
+VdU6=n@I_6zl]6U?Z2AMK20
+r1
+!s85 0
+31
+!i10b 1
+!s100 c2m7WKcaV<L[XVf`30RGj3
+IdU6=n@I_6zl]6U?Z2AMK20
+!i103 1
+S1
+R0
+Z17 w1539054452
+Z18 8C:/Users/chris/Documents/School/ECE385/Lab6/provided/memory_contents.sv
+Z19 FC:/Users/chris/Documents/School/ECE385/Lab6/provided/memory_contents.sv
+L0 14
+R4
+R11
+Z20 !s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/memory_contents.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/memory_contents.sv|
+!i113 1
+R6
+R12
+R8
+vmemory_parser
+R1
+R16
+DXx4 work 23 memory_contents_sv_unit 0 22 dU6=n@I_6zl]6U?Z2AMK20
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 gi]hPk3KO14Z<>kKGU9C02
+I;2>5<VNbcP6JOo9BB1jLZ3
+!s105 memory_contents_sv_unit
+S1
+R0
+R17
+R18
+R19
+Z22 L0 16
+R4
+R11
+R20
+R21
+!i113 1
+R6
+R12
+R8
+vpc_unit
+R1
+R9
+!i10b 1
+!s100 =H<KHkPX1;EJ9`V@J[OaG0
+I;T9KzQ[VVd5T02UM[;jhl0
+R3
+!s105 pc_sv_unit
+S1
+R0
+w1538937874
+8C:/Users/chris/Documents/School/ECE385/Lab6/pc.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/pc.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/pc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/pc.sv|
+!i113 1
+R6
+R7
+R8
+vreg_file
+R1
+R2
+!i10b 1
+!s100 R<Td0DZjP22z`Vi7<RSd03
+IMNIZoj@@KDiaK_29geW=Z0
+R3
+!s105 reg_file_sv_unit
+S1
+R0
+w1538538960
+8C:/Users/chris/Documents/School/ECE385/Lab6/reg_file.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/reg_file.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/reg_file.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/reg_file.sv|
+!i113 1
+R6
+R7
+R8
+vregister
+R1
+R2
+!i10b 1
+!s100 6HWM3f?A]8jCZ72HO0c;b1
+IzECeWQaob4NH6=@HY@X_@3
+R3
+!s105 register_sv_unit
+S1
+R0
+w1538538206
+8C:/Users/chris/Documents/School/ECE385/Lab6/register.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/register.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/register.sv|
+!i113 1
+R6
+R7
+R8
+vslc3
+R1
+R9
+!i10b 1
+!s100 mVT:cUZJ33?D5_S2MPYh=0
+IA[ze?ZJ1HZL<QVLT2?ZHT0
+R3
+!s105 slc3_sv_unit
+S1
+R0
+w1539055889
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/slc3.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/slc3.sv
+L0 19
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/slc3.sv|
+!i113 1
+R6
+R12
+R8
+XSLC3_2
+R1
+R14
+!i10b 1
+!s100 Cz8_^@QRefP31?j=Zf>lj0
+IXeGcKiAh>T3VH0bVkE>oo1
+VXeGcKiAh>T3VH0bVkE>oo1
+S1
+R0
+Z23 w1538424670
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/SLC3_2.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/SLC3_2.sv
+R13
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/SLC3_2.sv|
+!i113 1
+R6
+R12
+R8
+n@s@l@c3_2
+vsync
+R1
+R14
+!i10b 1
+!s100 2W5Vz0:F6ckE2`eJOTK5l1
+I2>S31g?T>^O0g<QzeOIN21
+R3
+Z24 !s105 Synchronizers_sv_unit
+S1
+R0
+Z25 w1539234278
+Z26 8C:/Users/chris/Documents/School/ECE385/Lab6/provided/Synchronizers.sv
+Z27 FC:/Users/chris/Documents/School/ECE385/Lab6/provided/Synchronizers.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R15
+Z28 !s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/Synchronizers.sv|
+Z29 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/Synchronizers.sv|
+!i113 1
+R6
+R12
+R8
+vsync_r0
+R1
+R14
+!i10b 1
+!s100 IGd9f_F;JNjVBLQ@DAnD10
+IMK]6A_`D[]h]nGAlAmQ^U2
+R3
+R24
+S1
+R0
+R25
+R26
+R27
+L0 18
+R4
+r1
+!s85 0
+31
+R15
+R28
+R29
+!i113 1
+R6
+R12
+R8
+vsync_r1
+R1
+R14
+!i10b 1
+!s100 1CXiH1DYDbAUS69Ee2j060
+Ii_eFh1EUzW6G5lkY7i7Ko3
+R3
+R24
+S1
+R0
+R25
+R26
+R27
+L0 39
+R4
+r1
+!s85 0
+31
+R15
+R28
+R29
+!i113 1
+R6
+R12
+R8
+vtest_memory
+R1
+R14
+!i10b 1
+!s100 AZAU7PQT4]][EEHo>57W43
+I5Z3bEYe=4GC:o5<BbQR1_1
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+w1538541886
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/test_memory.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/test_memory.sv
+L0 22
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/test_memory.sv|
+!i113 1
+R6
+R12
+R8
+vtestbench
+R1
+R9
+!i10b 1
+!s100 D3jhYOdz2ziF;`QGVG`FX3
+I`LKcRGK96:G:8m_HLMK`K3
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1539009824
+8C:/Users/chris/Documents/School/ECE385/Lab6/testbench.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6|C:/Users/chris/Documents/School/ECE385/Lab6/testbench.sv|
+!i113 1
+R6
+R7
+R8
+vtristate
+R1
+R14
+!i10b 1
+!s100 Akazoo=71mOgoH<gVR_UC0
+II]_MD8d@=_D@9QW3V0PBj3
+R3
+!s105 tristate_sv_unit
+S1
+R0
+R23
+8C:/Users/chris/Documents/School/ECE385/Lab6/provided/tristate.sv
+FC:/Users/chris/Documents/School/ECE385/Lab6/provided/tristate.sv
+R22
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/chris/Documents/School/ECE385/Lab6/provided/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/chris/Documents/School/ECE385/Lab6/provided|C:/Users/chris/Documents/School/ECE385/Lab6/provided/tristate.sv|
+!i113 1
+R6
+R12
+R8

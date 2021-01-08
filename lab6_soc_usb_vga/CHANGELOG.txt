@@ -1,0 +1,34 @@
+Changelog:
+	-States were not attached to the correct opcode in ISDU, corrected them
+	-Bus had MAR as input instead of ADDR_OUT. Changed .MAR(MAR) to .MAR(ADDR_OUT)
+	-Added SR1 Mux signal to State 1
+	-Status CC was defaulting to 1, made sure it wasn't doing that (more for readibility, not a bug really)
+	-Added state S_00, i think BR needs it to precess where to go.
+		*BR needed S_00
+	-BRn needs work
+		*BEN unit wasn't checking the sign correctly, manually checking the 16th bit fixes issue
+	-BRzp not jumping correctly (PC<-imm5) instead of (PC<-PC+ + imm5)
+		*Turns out ADDR1MUX was not set correctly
+
+	-Synchronized Signals
+Functionality:
+ADD   : GOOD
+ADDi  : GOOD
+AND   : GOOD
+ANDi  : GOOD
+NOT   : GOODish
+BR    : GOOD
+JMP   : GOOD
+JSR   : GOOD
+LDR   : GOOD
+STR   : GOOD
+PAUSE : GOOD
+
+TESTS:
+BASIC I/O 1 : GOOD
+BASIC I/O 2 : GOOD
+SELF-MOD    : NOT SURE
+XOR         : LAST PART IS BROKEN (PROBABLY OUTPUT SYNC)
+MULTIPLY    : N/A
+SORT        : N/A
+ACT ONCE    : N/A
