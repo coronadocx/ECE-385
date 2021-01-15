@@ -1,3 +1,3 @@
 # ECE-385 - Digital Systems Lab
 
-Just some old schoolwork.
+These folders contains old projects for digital systems lab. 
